@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Class: Week 2 - Interest in Others</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .checkbox-item:checked + label { text-decoration: line-through; color: #9ca3af; }
+        .service-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            position: relative;
+        }
+        .service-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background: #4f46e5;
+            border-radius: 12px 12px 0 0;
+        }
+        .note-box {
+            width: 100%;
+            min-height: 80px;
+            padding: 12px;
+            margin-top: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background-color: #f8fafc;
+            font-size: 0.875rem;
+            color: #475569;
+            resize: vertical;
+            outline: none;
+            transition: all 0.2s;
+        }
+        .note-box:focus {
+            border-color: #6366f1;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+        }
+        .tip-box {
+            background-color: #fffbeb;
+            border-left: 4px solid #f59e0b;
+        }
+        .exercise-box {
+            background-color: #f0fdf4;
+            border: 1px dashed #22c55e;
+        }
+        .prompt-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 min-h-screen pb-12">
+
+    <!-- Header Section -->
+    <header class="bg-indigo-900 text-white py-12 px-6 shadow-md mb-8">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-indigo-300 font-semibold tracking-widest uppercase text-xs mb-3">Field Service Master Class • Week 2</p>
+            <h1 class="text-3xl md:text-4xl font-bold mb-6 text-white">Interest in Others</h1>
+            <div class="mt-4 text-indigo-100 italic opacity-90 max-w-2xl mx-auto space-y-2 text-sm md:text-base leading-relaxed">
+                <p>“For Jehovah has commanded us in these words: ‘I have appointed you as a light of nations, for you to be a salvation to the ends of the earth.’”</p>
+                <p>“When those of the nations heard this, they began to rejoice and to glorify the word of Jehovah, and all those who were rightly disposed for everlasting life became believers.” — Acts 13:47, 48</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 space-y-8">
+
+        <!-- 1. CORE CONCEPT -->
+        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-xl font-bold text-indigo-900 mb-4 flex items-center">
+                <span class="mr-3 text-2xl">💡</span> The Principle
+            </h2>
+            <p class="text-lg leading-relaxed text-slate-700 font-medium">
+                "Love does not look for its own interests." — 1 Corinthians 13:5
+            </p>
+            <p class="mt-4 text-slate-600 leading-relaxed">
+                A conversation is more likely to be successful if we start with a topic that interests <strong>the other person</strong>. We want to be observant and flexible, moving away from our own agenda to meet the neighbor where they are.
+            </p>
+        </section>
+
+        <!-- 2. GUIDED DISCUSSION -->
+        <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h2 class="text-xl font-bold text-indigo-900 mb-6 flex items-center">
+                <span class="mr-3 text-2xl">💬</span> Discussion Points
+            </h2>
+            
+            <div class="space-y-12">
+                <!-- Point: Worry vs. Listening -->
+                <div class="tip-box p-6 rounded-r-xl">
+                    <h3 class="font-bold text-amber-900 text-lg flex items-center">
+                        <span class="mr-2">⚠️</span> The Barrier of Worry
+                    </h3>
+                    <p class="text-amber-800 mt-2 leading-relaxed">
+                        <strong>Think about this:</strong> If you are constantly worried about what to say next, you won't be able to listen. If your mind is rehearsing a script, you miss what the neighbor is actually feeling.
+                    </p>
+                    <p class="italic text-amber-900 mt-3 font-medium text-sm">How does focusing on "listening" actually make our job easier and less stressful?</p>
+                    <textarea class="note-box" placeholder="Record your thoughts here..."></textarea>
+                </div>
+
+                <!-- Being Observant -->
+                <div class="border-l-4 border-emerald-500 pl-6 py-1">
+                    <p class="font-bold text-slate-800 text-lg">The "Observer" Skill</p>
+                    <p class="text-slate-600 mt-2">Before we knock, look for clues. This gives us something to talk about that <strong>they</strong> already care about.</p>
+                    <textarea class="note-box" placeholder="What are three specific clues you can look for at a door?"></textarea>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. PRACTICAL EXERCISE: LISTENING DRILLS -->
+        <section class="exercise-box p-8 rounded-2xl shadow-sm">
+            <h2 class="text-xl font-bold text-green-900 mb-6 flex items-center">
+                <span class="mr-3 text-2xl">👂</span> Practice Listening: 10 Realistic Scenarios
+            </h2>
+            <p class="text-green-800 mb-8 leading-relaxed">
+                Teacher acts as the householder and reads these expanded prompts. 
+                Student practices <strong>waiting 3 seconds</strong> and then <strong>echoing the feeling</strong> before saying anything else.
+            </p>
+            
+            <div class="prompt-grid">
+                <!-- Topic 1 -->
+                <div class="bg-white p-5 rounded-xl border border-green-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <p class="font-bold text-green-900 text-base mb-2">1. Family Separation</p>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">
+                            "I'm sorry, I was just looking at some old photos. My grandkids just moved halfway across the country last week for my son's new job. The house feels so quiet and empty now, and with my health, I'm just not sure when I'll be able to make the trip to see them again. It’s a very lonely feeling."
+                        </p>
+                    </div>
+                </div>
+                <!-- Topic 2 -->
+                <div class="bg-white p-5 rounded-xl border border-green-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <p class="font-bold text-green-900 text-base mb-2">2. Cost of Living</p>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">
+                            "I just got back from the grocery store and I am still in shock. I feel like I bought half of what I usually do, but the bill was twice as much. I’m on a fixed pension, and I’m starting to genuinely worry about how I’m going to balance the utility bills with the cost of food this winter."
+                        </p>
+                    </div>
+                </div>
+                <!-- Topic 3 -->
+                <div class="bg-white p-5 rounded-xl border border-green-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <p class="font-bold text-green-900 text-base mb-2">3. World News Fatigue</p>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">
+                            "I actually had to turn off the TV right before you knocked. It’s just one disaster after another—wars, strikes, and people suffering. It feels like the whole world is falling apart at the seams, and honestly, it makes me feel pretty hopeless about where we are all headed."
+                        </p>
+                    </div>
+                </div>
+                <!-- Topic 4 -->
+                <div class="bg-white p-5 rounded-xl border border-green-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <p class="font-bold text-green-900 text-base mb-2">4. Lack of Peace</p>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">
+                            "I was just reading about the tension in the city. It seems like no one can have a calm conversation anymore. Everyone is so angry and ready to jump down your throat over the smallest disagreement. I really miss the days when people could be neighbors without all this constant fighting."
+                        </p>
+                    </div>
+                </div>
+                <!-- Topic 5 -->
+                <div class="bg-white p-5 rounded-xl border border-green-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <p class="font-bold text-green-900 text-base mb-2">5. Neighborhood Changes</p>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">
+                            "I’ve lived in this same house for over 30 years, but I feel like a stranger on my own street now. All the old neighbors have moved out, and the new people just drive into their garages and close the doors. There’s no sense of community anymore; everyone is just too busy for each other."
+                        </p>
+                    </div>
+                </div>
+                <!-- Topic 6 -->
+                <div class="bg-white p-5 rounded-xl border border-green-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <p class="font-bold text-green-900 text-base mb-2">6. Health Frustrations</p>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">
+                            "I apologize for the delay in answering. My knees and back have been giving me such a hard time lately that it takes me a minute to get moving. It’s frustrating because I used to be so active, and now even just walking to the front door feels like a major chore. Getting older isn't easy."
+                        </p>
+                    </div>
+                </div>
+                <!-- Topic 7 -->
+                <div class="bg-white p-5 rounded-xl border border-green-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <p class="font-bold text-green-900 text-base mb-2">7. Fear for Personal Safety</p>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">
+                            "I’m a bit nervous answering the door, to be honest. I saw on the neighborhood app that there was another break-in just two blocks away last night. I’ve lived here a long time, but lately, I’ve been double-checking my locks even during the day. It’s hard to feel truly safe in your own home."
+                        </p>
+                    </div>
+                </div>
+                <!-- Topic 8 -->
+                <div class="bg-white p-5 rounded-xl border border-green-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <p class="font-bold text-green-900 text-base mb-2">8. Digital Overload</p>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">
+                            "Everything is so complicated now with smartphones and QR codes for everything. I tried to pay a bill online today and just ended up more confused than when I started. I feel like the world is moving way too fast for me, and I really miss just being able to talk to a human being to get things done."
+                        </p>
+                    </div>
+                </div>
+                <!-- Topic 9 -->
+                <div class="bg-white p-5 rounded-xl border border-green-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <p class="font-bold text-green-900 text-base mb-2">9. Unpredictable Weather</p>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">
+                            "I was just looking at the garden—the heat is just killing everything. We never used to have these kinds of extreme droughts when I was growing up. It makes me worry about the environment and what the planet is going to look like in another twenty years if things keep changing like this."
+                        </p>
+                    </div>
+                </div>
+                <!-- Topic 10 -->
+                <div class="bg-white p-5 rounded-xl border border-green-100 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <p class="font-bold text-green-900 text-base mb-2">10. Future for the Youth</p>
+                        <p class="text-sm text-slate-600 italic leading-relaxed">
+                            "I look at my little grandchildren playing in the yard and I find myself getting sad. The world is so much more dangerous and confusing now than it was for me. I often wonder what kind of world they are going to grow up in, and if they’ll ever know a time of real peace and security."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 bg-white/60 p-6 rounded-xl">
+                <h3 class="font-bold text-green-900 mb-2">The Mastery Steps:</h3>
+                <ol class="list-decimal list-inside text-sm text-green-800 space-y-3">
+                    <li><strong>Listen fully:</strong> Do not look at your Bible or bag while they speak. Maintain eye contact.</li>
+                    <li><strong>The 3-Second Rule:</strong> When they stop, count to three slowly in your head. Often, they will add one more thought during this silence.</li>
+                    <li><strong>The Echo:</strong> Start your response by repeating their feeling. <em>"It sounds like you're really concerned about..."</em></li>
+                    <li><strong>Pause again:</strong> Let your "Echo" sink in so they know you truly understood.</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- 4. PRACTICAL TOOL: THE SERVICE CARD -->
+        <div class="flex justify-center py-6">
+            <section class="service-card text-slate-800 p-8 rounded-2xl shadow-xl w-full max-w-md">
+                <div class="text-center mb-8">
+                    <h2 class="text-xl font-bold text-indigo-900 uppercase tracking-widest">Service Card</h2>
+                    <p class="text-slate-400 text-xs mt-1">Week 2 Goal: Listen with Love</p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="bg-indigo-900 text-white rounded-lg h-8 w-8 flex items-center justify-center font-bold mr-4 shrink-0 shadow-sm">1</div>
+                        <div>
+                            <p class="font-bold text-slate-900">PRAY FOR CALM</p>
+                            <p class="text-sm text-slate-500 mt-1">Ask Jehovah to help you silence the "script" in your head so you can hear the person's heart.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-indigo-900 text-white rounded-lg h-8 w-8 flex items-center justify-center font-bold mr-4 shrink-0 shadow-sm">2</div>
+                        <div>
+                            <p class="font-bold text-slate-900">OBSERVE & BRIDGE</p>
+                            <p class="text-sm text-slate-500 mt-1">Use a clue to start. Then, give the neighbor the "Right of Way" in the conversation.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-indigo-900 text-white rounded-lg h-8 w-8 flex items-center justify-center font-bold mr-4 shrink-0 shadow-sm">3</div>
+                        <div>
+                            <p class="font-bold text-slate-900">THE 3-SECOND RULE</p>
+                            <p class="text-sm text-slate-500 mt-1">After they finish, count to 3. This shows respect and gives them space to say more.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="bg-indigo-900 text-white rounded-lg h-8 w-8 flex items-center justify-center font-bold mr-4 shrink-0 shadow-sm">4</div>
+                        <div>
+                            <p class="font-bold text-slate-900">ECHO THEIR CONCERN</p>
+                            <p class="text-sm text-slate-500 mt-1">Before you speak, prove you listened by mentioning something they said.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 pt-6 border-t border-slate-100 text-center">
+                    <p class="text-[10px] text-slate-400 font-bold tracking-[0.2em] uppercase italic">Working Shoulder to Shoulder</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- 5. FIELD READINESS -->
+        <section class="bg-indigo-50 p-8 rounded-2xl border border-indigo-100">
+            <h2 class="text-lg font-bold text-indigo-900 mb-4 text-center">Preparation for Today</h2>
+            <ul class="space-y-4">
+                <li class="flex items-start">
+                    <input type="checkbox" id="prep1" class="checkbox-item mt-1.5 mr-4 h-5 w-5 rounded border-indigo-300 text-indigo-600 focus:ring-indigo-500">
+                    <label for="prep1" class="text-slate-700 font-medium">I will use the "3-Second Rule" at every door today.</label>
+                </li>
+                <li class="flex items-start">
+                    <input type="checkbox" id="prep2" class="checkbox-item mt-1.5 mr-4 h-5 w-5 rounded border-indigo-300 text-indigo-600 focus:ring-indigo-500">
+                    <label for="prep2" class="text-slate-700 font-medium">I will focus on being an "Echo" to show the neighbor I heard them.</label>
+                </li>
+            </ul>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="text-center pt-12 border-t border-slate-200">
+            <p class="text-slate-400 text-[10px] uppercase tracking-[0.3em] font-semibold">Training for the Ministry • 50 Week Master Class</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
